@@ -4,17 +4,36 @@ import {
 } from "react-router-dom";
 
 //Routes
-import Dashboard from "./pages/Dashboard";
+import Dashboard, { dashboardLoader } from "./pages/Dashboard";
+import Error from "./pages/Error";
+
+//layout
+import Main, { mainLoader } from "./layouts/Main";
+
+//actions
+import { logoutAction } from "./actions/logout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />
+    element: <Main />,
+    loader: mainLoader,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+        loader: dashboardLoader,
+        errorElement: <Error />
+      },
+      {
+        path: "logout",
+        action: logoutAction
+      },
+    ]
   },
-  {
-    path: "/contact",
-    element: <h1>Contact</h1>
-  },
+  
+
 ]);
 
 function App() {
