@@ -1,9 +1,9 @@
 # Run
 
 Open Terminal and type:
-'''sh
+```sh
 npm run dev
-'''
+```
 
 # React + Vite
 
