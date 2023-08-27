@@ -19,11 +19,9 @@ const Intro = () => {
                 type="text" 
                 name="userName" 
                 required 
-                placeholder="What is your name?"
-                aria-label="Your Name" 
-                autoComplete="given-name"
+                placeholder="What is your name?" aria-label="Your Name" autoComplete="given-name"
                 />
-                <button type='submit' className='btn btn--dark'>
+                <button type="submit" className="btn btn--dark">
                     <span>Create Account</span>
                     <UserPlusIcon width={20}/>
                 </button>
