@@ -1,7 +1,9 @@
-# How to Run
+# Run
 
-- npm run dev
-
+Open Terminal and type:
+'''sh
+npm run dev
+'''
 
 # React + Vite
 
