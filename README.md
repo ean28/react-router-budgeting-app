@@ -1,6 +1,9 @@
 # Run
 
-Open Terminal and type:
+Open Terminal and type the following commands
+```sh
+npm run build
+```
 ```sh
 npm run dev
 ```

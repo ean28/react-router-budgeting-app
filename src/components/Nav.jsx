@@ -14,11 +14,11 @@ const Nav = ({ userName }) => {
             to="/"
             aria-label="Go to Home"
         >
-        <img src={logomark} alt="" height={30}/>
-        <span>Budget</span>
+            <img src={logomark} alt="" height={30}/>
+            <span>Budget</span>
         </NavLink>
         {
-            //userName && (
+            userName && (
                 <Form
                     method="post"
                     action="/logout"
@@ -33,7 +33,7 @@ const Nav = ({ userName }) => {
                         <TrashIcon width={20} />
                     </button>
                 </Form>
-            //)
+            )
         }
     </nav>
   )
